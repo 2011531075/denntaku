@@ -37,10 +37,31 @@
 
 
 
-- (IBAction)numberButton:(id)sender;
+//- (IBAction)numberButton:(id)sender;
+
+- (IBAction)pushnanabotann:(id)sender;
+
+- (IBAction)pushhatibotann:(id)sender;
 
 - (IBAction)pushACbotann:(id)sender;
+- (IBAction)pushkyuubotann:(id)sender;
+- (IBAction)pushyonnbotann:(id)sender;
+- (IBAction)pushgobotann:(id)sender;
+- (IBAction)pushrokubotann:(id)sender;
+- (IBAction)pushitibotann:(id)sender;
+- (IBAction)pushnibotann:(id)sender;
+- (IBAction)pushsannbotann:(id)sender;
+- (IBAction)pushzerobotann:(id)sender;
+- (IBAction)pushtennbotann:(id)sender;
+- (IBAction)pushikorubotann:(id)sender;
+- (IBAction)pushpurasubotann:(id)sender;
+- (IBAction)pushmainasubotann:(id)sender;
+- (IBAction)pushkakerubotann:(id)sender;
+- (IBAction)pushwakerubotann:(id)sender;
+- (IBAction)pushpasenntobotann:(id)sender;
+- (IBAction)pushpurasutomainasubotann:(id)sender;
 
+- (void)pushNumberButton:(int)number;
 
 
 @end
