@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+
+@interface ViewController : UIViewController{
+    enum {
+        ADD,
+        SUBSTRACT,
+        CUT,
+        MULTIPLY,
+    };
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *gamenn;
 

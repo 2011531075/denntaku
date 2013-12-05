@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 
+
+
 @interface ViewController (){
     double x;
     double y;
-    int z;
+    int operation;
     int ikoru;
    // double xx;
 }
@@ -26,7 +28,7 @@
     
     x = 0;
     y = 0;
-    z = 0;
+    operation = 0;
 	ikoru = 0;
 }
 
@@ -61,7 +63,7 @@
 - (IBAction)pushACbotann:(id)sender {
     x = 0;
     y = 0;
-    z = 0;
+    operation = 0;
     ikoru = 0;
     self.gamenn.text = [NSString stringWithFormat:@"%.f",x];
 }
@@ -102,27 +104,33 @@
    
 }
 
+/*
+#define ADD 1
+#define SUBSTRACT 2
+
+ */
+
+
+
 - (IBAction)pushikorubotann:(id)sender {
     ikoru = 1;
     
-    if(z == 1){
-    x = x + y;
-    self.gamenn.text = [NSString stringWithFormat:@"%.f",x];
+    // if(operator == ADD)
+    if(operation == ADD){
+        x += y; // x = x + y;
     }
-    if(z == 2){
-        x = x - y;
-        self.gamenn.text = [NSString stringWithFormat:@"%.f",x];
+    if(operation == 2){
+        x -= y; //x = x - y;
     }
-    if(z == 3){
-        x = x * y;
-        self.gamenn.text = [NSString stringWithFormat:@"%.f",x];
+    if(operation == 3){
+        x *= y; //x = x * y;
     }
 
-    if(z == 4){
-        x = y / x;
-     
-        self.gamenn.text = [NSString stringWithFormat:@"%f",x];
+    if(operation == 4){
+        x /= y; //x = y / x;
     }
+
+    self.gamenn.text = [NSString stringWithFormat:@"%.f",x];
 
     return ;
     
@@ -134,7 +142,7 @@
     ikoru = 0;
     y = x;
     x = 0;
-    z = 1;
+    operation = 1;
     //x = x+y;
     self.gamenn.text = [NSString stringWithFormat:@"%.f",x];
     }
@@ -143,21 +151,21 @@
     ikoru = 0;
     y = x;
     x = 0;
-    z = 2;    //x = x-y;
+    operation = 2;    //x = x-y;
     self.gamenn.text = [NSString stringWithFormat:@"%.f",x];}
 
 - (IBAction)pushkakerubotann:(id)sender {
     ikoru = 0;
     y = x;
     x = 0;
-    z = 3;    //x = x*y;
+    operation = 3;    //x = x*y;
     self.gamenn.text = [NSString stringWithFormat:@"%.f",x];}
 
 - (IBAction)pushwakerubotann:(id)sender {
     ikoru = 0;
     y = x;
     x = 0;
-    z = 4;    //x = x/y;
+    operation = 4;    //x = x/y;
     self.gamenn.text = [NSString stringWithFormat:@"%.f",x];
 }
 
