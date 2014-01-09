@@ -100,17 +100,6 @@
      [self pushNumberButton:0];
 }
 
-- (IBAction)pushtennbotann:(id)sender {
-   
-}
-
-/*
-#define ADD 1
-#define SUBSTRACT 2
-
- */
-
-
 
 - (IBAction)pushikorubotann:(id)sender {
     ikoru = 1;
